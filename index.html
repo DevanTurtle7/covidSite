@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+    <script src="main.js"></script>
+
+    <title>COVID-19</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <a class="navbarLink" id="navHome" onclick="scrollHome()">COVID-19</a>
+        <a class="navbarLink" id="navAbout" onclick="scrollAbout()">About</a>
+        <a class="navbarLink" id="navData" onclick="scrollData()">Data</a>
+        <a class="navbarLink" id="navStayingSafe" onclick="scrollStayingSafe()">Staying Safe</a>
+        <a class="navbarLink" id="navSources" onclick="scrollSources()">Sources</a>
+    </div>
+
+    <div class="wrapper">
+        <div class="header">
+            <img src="assets/images/covidVirus.png" alt="Virus">
+            <h1>COVID-19</h1>
+            <a onclick="scrollAbout()">Learn the Facts<br><i class="fa fa-angle-down"></i></a>
+        </div>
+
+        <div class="about">
+            <div class="aboutContent">
+                <h2>About</h2>
+                <p>COVID-19, also known as the Coronavirus is an infectious disease. Coronavirus causes respiratory
+                    problems such as damage to lung tissue and causes trouble breathing. COVID-19 is spread through droplets of saliva or other bodily fluids. These fluids most commonly are from coughs, sneezes or the nose.</p>
+            </div>
+            <div class="aboutMedia">
+                <h3>Latest in the News</h3>
+                <video controls>
+                    <source src="assets/media/drFauciVideo.mp4" type="video/mp4">
+                </video>
+                <p>Dr Fauci Speaks on Covid-19 case numbers and its impact during the holidays.</p>
+                <p>Source: <a href="https://www.youtube.com/watch?v=2ltJK8f6LSI"><i>CBS This Morning</i></a></p>
+            </div>
+        </div>
+
+        <div class="data">
+            <h2 id="dataTitle">Data</h2>
+            <div class="dataContent">
+                <div>
+                    <h3>Total Cases</h3>
+                    <h2>14,400,000+</h2>
+                </div>
+
+                <div>
+                    <h3>Total Deaths</h3>
+                    <h2>280,000+</h2>
+                </div>
+
+            </div>
+            <img src="assets/images/caseRateMap.png" alt="COVID-19 Map">
+        </div>
+
+        <div class="symptoms">
+            <h3>Symptoms</h3>
+            <ul>
+                <li>Fever</li>
+                <li>Chills</li>
+                <li>Trouble breathing</li>
+                <li>Cough</li>
+                <li>Fatigue</li>
+                <li>Sore throat</li>
+                <li>Loss of taste or smell</li>
+                <li>Runny nose</li>
+                <li>Nausea or vomiting</li>
+            </ul>
+        </div>
+
+        <div class="stayingSafe">
+            <h2>Staying Safe</h2>
+            <h3>Frequently Wash Your Hands</h3>
+            <ul>
+                <li>Thoroughly wash your hands for at least 20 seconds with soap and hot water. If you don't have soap
+                    and water, you can also use hand sanitizer.</li>
+                <li>Washing your hands can prevent you from getting infected via surfaces.</li>
+                <li>It's important to wash your hands after commonly used surfaces and before eating or touching your
+                    face.</li>
+            </ul>
+
+            <h3>Wear a Mask</h3>
+            <ul>
+                <li>Wearing a mask can protect yourself and others from airborne spread of COVID-19</li>
+                <li>Masks should be worn at all times in public or whenever around others.</li>
+                <li>Wearing a mask is important even if you don't feel sick, since COVID-19 can be asymptomatic.</li>
+            </ul>
+
+            <h3>Socially Distance</h3>
+            <ul>
+                <li>Maintain a 6 foot distance with people when in public to minimize airborne spread.</li>
+            </ul>
+
+            <h3>Frequently Disinfect Surfaces</h3>
+            <ul>
+                <li>Disinfecting surfaces can kill any germs living on them and prevents spread.</li>
+                <li>Clean commonly used surfaces such as doorknobs, keyboards, tables, phones, faucets, etc.</li>
+                <li>Surfaces can be cleaned with soap, detergent, or household disinfectant.</li>
+            </ul>
+
+            <h3>Check for Symptoms</h3>
+            <ul>
+                <li>Being aware of your own health can is very important to protect yourself and others</li>
+                <li>Monitor your health daily. Check your temperature and be aware of any symptoms you may have.</li>
+                <li>Always preform safe practices such as wearing masks and social distancing even if you don't have any
+                    symptoms, as COVID-19 can be asymptomatic.</li>
+            </ul>
+        </div>
+
+        <div class="sources">
+            <h2>Sources</h2>
+            <p>Coronavirus Disease 2019 (COVID-19). (n.d.). Retrieved December 06, 2020, from
+                https://www.cdc.gov/coronavirus/2019-ncov/index.html</p>
+            <p>Coronavirus. (n.d.). Retrieved December 07, 2020, from https://www.who.int/health-topics/coronavirus</p>
+        </div>
+
+        <div class="footer">
+            <p class="copyright">© Devan Kavalchek Nov. 30th, 2020</p>
+        </div>
+    </div>
+</body>
+
+</html>

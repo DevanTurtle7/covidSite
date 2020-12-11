@@ -1,0 +1,287 @@
+
+/* Grid Setup */
+.header {grid-area: header;}
+.about {grid-area: about;}
+.data {grid-area: data;}
+.symptoms {grid-area: symptoms;}
+.stayingSafe {grid-area: stayingSafe;}
+.sources {grid-area: sources;}
+.footer {grid-area: footer;}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    'header header header header'
+    'about about about about'
+    'data data data data'
+    'symptoms stayingSafe stayingSafe stayingSafe'
+    'sources sources sources sources'
+    'footer footer footer footer';
+}
+
+/* Navigation Styles */
+#navbar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    z-index: 99;
+}
+
+.navbarLink {
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: color .1s
+}
+
+.navbarLink:hover {
+    color: #0074cc;
+    text-decoration: underline;
+}
+
+#navHome {
+    position: absolute;
+    left: 0px;
+}
+
+#navSources {
+    margin-right: 20px;
+}
+
+#navHome {
+    margin-left: 20px;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header a {
+    text-align: center;
+    line-height: 1.5em;
+    position: absolute;
+    bottom: 30px;
+    transition: color .2s
+}
+
+.header a:hover {
+    color: #0074cc
+}
+
+.header img {
+    width: 70%;
+    position: absolute;
+    left: -35%;
+    z-index: -1;
+}
+
+/* About Styles */
+.about {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.aboutContent, .aboutMedia {
+    width: 50%
+}
+
+.aboutContent h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.aboutContent p {
+    margin-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.75em;
+}
+
+.aboutMedia video {
+    width: 90%;
+}
+
+.aboutMedia video, .aboutMedia p {
+    padding-left: 5%;
+    padding-right: 5%
+}
+
+.aboutMedia p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+
+.aboutMedia h3 {
+    text-align: center;
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .about {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-around;
+    }
+
+    .aboutMedia, .aboutContent {
+        width: 90%
+    }
+}
+
+/* Data Styles */
+.data {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.data h2, .data h3 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.data h3 {
+    padding-bottom: 5px;
+    color: #000000
+}
+
+.data h2 {
+    margin-bottom: 15px;
+}
+
+.dataContent {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+
+.data img {
+    max-height: 70%;
+    max-width: 80%;
+}
+
+#dataTitle {
+    margin-top: 25px;
+}
+
+/* Symptoms Styles */
+.symptoms {
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: #0074cc;
+    border-radius: 5px;
+}
+
+.symptoms h3 {
+    color: #ffffff;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.symptoms ul {
+    margin-top: 0px;
+}
+
+.symptoms li {
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+/* Staying Safe Styles */
+.stayingSafe {
+    background-color: #fafafa;
+}
+
+.stayingSafe h2 {
+    margin-bottom: 5px;
+}
+
+.stayingSafe {
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.stayingSafe h3 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.stayingSafe ul {
+    margin-top: 0px;
+}
+
+.stayingSafe li {
+    padding-bottom: 5px;
+}
+
+/* Sources Styles */
+.sources p {
+    margin-top: 0px;
+    margin-left: 4em;
+    text-indent: -4em;
+}
+
+.sources h2 {
+    margin-bottom: 10px;
+}
+
+.sources {
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+/* Footer Styles */
+.footer {
+    padding-left: 20px;
+    background-color: #fafafa;
+}
+
+/* HTML Element Styles */
+a:hover {
+    cursor: pointer;
+}
+
+a:visited, a {
+    text-decoration: none;
+    color: #000000;
+}
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+
+    /*
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    */
+}
+
+h2, h3 {
+    color: #0074cc
+}
+
+html {
+    scroll-behavior: smooth;
+}
